@@ -1,0 +1,22 @@
+{
+  "name": "pseudo-localization-rn-example",
+  "displayName": "PseudoLocalizationRn Example",
+  "expo": {
+    "name": "pseudo-localization-rn-example",
+    "slug": "pseudo-localization-rn-example",
+    "description": "Example app for pseudo-localization-rn",
+    "privacy": "public",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
