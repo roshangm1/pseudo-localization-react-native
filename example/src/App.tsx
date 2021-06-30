@@ -1,27 +1,14 @@
-import { PseudoLocalizationProvider } from 'pseudo-localization-rn';
-
-import * as React from 'react';
+import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { PseudoLocalizationProvider } from 'react-native-pseudo-localization';
 
 export default function App() {
   return (
     <PseudoLocalizationProvider enabled={true}>
       <View style={styles.container}>
-        <Text>
-          I love you
-          <Text>
-            Hello
-            <Text>
-              World
-              <Text>
-                My nepal
-                <Text>
-                  Country<Text>Germany</Text>
-                </Text>
-              </Text>
-            </Text>
-          </Text>
-        </Text>
+        <View style={styles.box}>
+          <Text numberOfLines={1}>This is a test</Text>
+        </View>
       </View>
     </PseudoLocalizationProvider>
   );
@@ -34,8 +21,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   box: {
-    width: 60,
-    height: 60,
+    width: 90,
     marginVertical: 20,
   },
 });

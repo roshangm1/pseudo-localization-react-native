@@ -1,5 +1,5 @@
 {
-  "name": "pseudo-localization-rn",
+  "name": "react-native-pseudo-localization",
   "version": "0.1.0",
   "description": "Pseudo Localization for react native",
   "main": "lib/commonjs/index",
@@ -24,13 +24,13 @@
   "keywords": [
     "react-native"
   ],
-  "repository": "https://www.roshan.info.np",
+  "repository": "https://github.com/roshangm1/pseudo-localization-react-native",
   "author": "Roshan Gautam <roosan.gm@gmail.com> (https://www.roshan.info.np)",
   "license": "MIT",
   "bugs": {
-    "url": "https://www.roshan.info.np/issues"
+    "url": "https://github.com/roshangm1/pseudo-localization-react-native/issues"
   },
-  "homepage": "https://www.roshan.info.np#readme",
+  "homepage": "https://github.com/roshangm1/pseudo-localization-react-native#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },

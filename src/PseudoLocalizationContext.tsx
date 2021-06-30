@@ -13,7 +13,7 @@ const isNewTextVersion = Boolean(Text?.render);
 const PseudoLocalizationProvider: React.FC<PseudoLocalizationProps> = (
   props
 ) => {
-  const { enabled } = props;
+  const { enabled = true } = props;
   const processData = (data: string | []) => {
     if (!enabled) {
       return data;
