@@ -1,19 +1,29 @@
-import * as React from 'react';
+import { PseudoLocalizationProvider } from 'pseudo-localization-rn';
 
-import { StyleSheet, View, Text } from 'react-native';
-import PseudoLocalizationRn from 'pseudo-localization-rn';
+import * as React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    PseudoLocalizationRn.multiply(3, 7).then(setResult);
-  }, []);
-
   return (
-    <View style={styles.container}>
-      <Text>Result: {result}</Text>
-    </View>
+    <PseudoLocalizationProvider enabled={true}>
+      <View style={styles.container}>
+        <Text>
+          I love you
+          <Text>
+            Hello
+            <Text>
+              World
+              <Text>
+                My nepal
+                <Text>
+                  Country<Text>Germany</Text>
+                </Text>
+              </Text>
+            </Text>
+          </Text>
+        </Text>
+      </View>
+    </PseudoLocalizationProvider>
   );
 }
 
