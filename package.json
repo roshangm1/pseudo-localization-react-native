@@ -1,5 +1,5 @@
 {
-  "name": "react-native-pseudo-localization",
+  "name": "@roshangm1/react-native-pseudo-localization",
   "version": "0.1.0",
   "description": "Pseudo Localization for react native",
   "main": "lib/commonjs/index",
@@ -86,7 +86,7 @@
       "publish": true
     },
     "github": {
-      "release": true
+      "release": false
     },
     "plugins": {
       "@release-it/conventional-changelog": {

@@ -1,13 +1,15 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { PseudoLocalizationProvider } from 'react-native-pseudo-localization';
+import { PseudoLocalizationProvider } from '@roshangm1/react-native-pseudo-localization';
 
 export default function App() {
   return (
-    <PseudoLocalizationProvider enabled={true}>
+    <PseudoLocalizationProvider>
       <View style={styles.container}>
         <View style={styles.box}>
-          <Text numberOfLines={1}>This is a test</Text>
+          <Text>
+            This is a test<Text>hello world</Text>
+          </Text>
         </View>
       </View>
     </PseudoLocalizationProvider>

@@ -1,12 +1,9 @@
 import React, { createContext } from 'react';
 import { Text } from 'react-native';
 import pseudoLocalizeString from './pseudoLocalizeString';
+import type { PseudoLocalizationProps } from './types';
 
 const PseudoLocalizationContext = createContext(false);
-
-interface PseudoLocalizationProps {
-  enabled?: boolean;
-}
 
 //@ts-ignore
 const isNewTextVersion = Boolean(Text?.render);

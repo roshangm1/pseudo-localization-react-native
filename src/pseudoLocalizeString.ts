@@ -1,4 +1,6 @@
-const ACCENTED_MAP = {
+import type { C, Strategies } from './types';
+
+export const ACCENTED_MAP = {
   a: 'ȧ',
   A: 'Ȧ',
   b: 'ƀ',
@@ -53,7 +55,7 @@ const ACCENTED_MAP = {
   Z: 'Ẑ',
 };
 
-const BIDI_MAP = {
+export const BIDI_MAP = {
   a: 'ɐ',
   A: '∀',
   b: 'q',
@@ -107,20 +109,6 @@ const BIDI_MAP = {
   z: 'z',
   Z: 'Z',
 };
-
-interface Strategy<T> {
-  prefix: string;
-  postfix: string;
-  map: T;
-  elongate: boolean;
-}
-
-interface Strategies {
-  accented: Strategy<typeof ACCENTED_MAP>;
-  bidi: Strategy<typeof BIDI_MAP>;
-}
-
-type C = keyof typeof ACCENTED_MAP;
 
 const strategies: Strategies = {
   accented: {
