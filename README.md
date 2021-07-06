@@ -15,7 +15,8 @@ yarn add @roshangm1/react-native-pseudo-localization
 import { PseudoLocalizationProvider } from '@roshangm1/react-native-pseudo-localization';
 
 return (
-  <PseudoLocalizationProvider>
+  // enabled prop is optional and is true by default
+  <PseudoLocalizationProvider enabled={true}>
     <View style={styles.container}>
       <View style={styles.box}>
         <Text>
